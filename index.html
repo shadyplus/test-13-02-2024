@@ -136,12 +136,12 @@
     
 @media only screen and (max-width: 600px) {
   #tm-section-search {
-    margin-top: -2.95rem;
+    margin-top: -6.95rem;
   }
 }
 @media only screen and (min-width: 600px) {
   #tm-section-search {
-    margin-top: -7.95rem;
+    margin-top: -2.95rem;
   }
 }
 
@@ -151,8 +151,8 @@
    margin-left: 5px;" class="row tm-banner-row" id="tm-section-search">
 
     <form dir="rtl" action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-        <div style="text-align: center;">
-            <!-- <img class="img-fluid" src="./assets/img/free-spirit-logo-0142.png" alt=""> -->
+        <!-- <div style="text-align: center;">
+            <img class="img-fluid" src="./assets/img/free-spirit-logo-0142.png" alt="">
             <p style="margin: 10px 0 0 0;
             padding: 0;
             font-size: 30px;
@@ -161,13 +161,14 @@
             color: #012970; margin-bottom: 20px;">
               البحث عن أفضل العروض
             </p>
-        </div>
+        </div> -->
       
        
-        <div class="form-row tm-search-form-row">                                
+        <div style="margin-top: 20px;" class="form-row tm-search-form-row">                                
             <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-                <label style="text-align: right;" for="inputCity">اختر الدولة </label>
+                <!-- <label style="text-align: right;" for="inputCity">اختر الدولة </label> -->
                 <select name="" class="form-control tm-select form-select" id="">
+                    <option value=""> اختر الدولة </option>
                     <option value="">ألبانيا </option>
                     <option value="">جورجيا</option>
                     <option value="">أزربيجان</option>
@@ -176,9 +177,11 @@
                 </select>
             </div>
             <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-              <label for="inputAdult">عدد البالغين</label>     
+              <!-- <label for="inputAdult">عدد البالغين</label>      -->
                     <select name="adult" class="form-control tm-select form-select" id="inputAdult">
-                        <option value="1" selected>1</option>
+                      <option  selected>عدد الأيام</option>
+                        <option value="1" >1</option>
+
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -191,6 +194,23 @@
                     </select>                                       
             </div>
             <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+              <!-- <label for="inputAdult">عدد البالغين</label>      -->
+                    <select name="adult" class="form-control tm-select form-select" id="inputAdult">
+                      <option value="0" selected>اختر عدد الأشخاص</option>
+
+                      <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>                                       
+            </div>
+            <!-- <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
               <label for="inputChildren">عدد الأطفال</label>                                            
               <select name="children" class="form-control tm-select form-select" id="inputChildren">
                 <option value="0" selected>اضغط للإختيار </option>
@@ -204,9 +224,9 @@
                   <option value="8">8</option>
                   <option value="9">9</option>
               </select>                         
-            </div>
-            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-1">                                    
-                <!-- <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+            </div> -->
+            <!-- <div style="text-align: right;" class="form-group tm-form-group tm-form-group-1">                                    
+                <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                     <label for="inputRoom">كم عدد الأيام</label>
                     <select name="room" class="form-control tm-select" id="inputRoom">
                         <option value="1" selected>1 يوم</option>
@@ -220,8 +240,8 @@
                         <option value="9">9 أيام</option>
                         <option value="10">10 أيام</option>
                     </select>                                        
-                </div> -->
-                <!-- <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                </div>
+                <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
                     <label for="inputAdult">بالغ</label>     
                     <select name="adult" class="form-control tm-select" id="inputAdult">
                         <option value="1" selected>1</option>
@@ -235,7 +255,7 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>                                        
-                </div> -->
+                </div>
                 <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
 
                     <label for="inputChildren"> مدة الرحلة </label>                                            
@@ -252,7 +272,21 @@
                         <option value="9">9</option>
                     </select>                                        
                 </div>
-            </div>
+            </div> -->
+                          <button  style="margin: auto; height: 45px;margin: auto;
+                          height: 45px;
+                          /* width: 23%; */
+                          margin-top: 0px;" type="submit" class=" shady btn btn-primary tm-btn  text-uppercase "  id="btnSubmit">بحث عن أفضل الرحلات </button>    
+              <style>
+                
+
+
+              </style>
+            <!-- <div style="text-align: center;">
+              <button style="margin: auto; height: 45px;" type="submit" class="btn btn-primary tm-btn  text-uppercase " id="btnSubmit">بحث عن أفضل الرحلات </button>    
+
+            </div> -->
+            <!-- <button type="submit" class="btn btn-primary tm-btn  text-uppercase " id="btnSubmit">بحث عن أفضل الرحلات </button>     -->
         </div> 
         <!-- <div class="form-row tm-search-form-row">
 
@@ -271,7 +305,7 @@
           <!-- <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">بحث عن أفضل الرحلات </button> -->
       </div>           
       <div style="text-align: center; margin-bottom: 10px;">
-        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase w-75" id="btnSubmit">بحث عن أفضل الرحلات </button>    
+        <!-- <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase w-50" id="btnSubmit">بحث عن أفضل الرحلات </button>     -->
 
       </div>
     </form>                             
@@ -280,9 +314,9 @@
 <style>
   .tm-search-form {
     background-color: #f2f5fc;
-    border: 1px dashed;
+    border: 2px solid;
     width: 100%;
-    max-width: 830px;
+    max-width:1282px;
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 16px;  
@@ -301,10 +335,19 @@
     margin-right: -5px;
     margin-left: -5px;
   }
+  
   .tm-form-group-1 {
-    width: 50%;
+    width: 25%;
 
   }
+  
+@media only screen and (max-width: 600px) {
+  .tm-form-group-1 {
+    width: 100%;
+  }
+
+}
+
   .tm-form-group-pad {
     padding: 0 8px;
   }
@@ -1538,7 +1581,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>ايمان محمود   </h4>
+                <h4> محمود زكريا    </h4>
                 <span>ٍSocial Media Manager</span>
                 <p dir="rtl">لديه خبرة في إدارة المواقع و التسويق عبر الإنترنت و برمجة المواقع   الأمن السيبراني .</p>
               </div>
