@@ -32,7 +32,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
+  <header style="direction: rtl;" id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -49,23 +49,7 @@
           <li><a class="nav-link scrollto" href="#portfolio">المعالم</a></li>
           <li><a class="nav-link scrollto" href="#team">الفريق </a></li>
           <li><a href="blog.html">مدونة الشركة</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
+         
 
           <!-- <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -93,14 +77,32 @@
           </li> -->
 
           <li><a class="nav-link scrollto" href="#contact">التواصل</a></li>
+          <li class="dropdown"><a href="#"><span>اللغة <img style="width: 20px;" class="img-fluid" src="./assets/img/languages/Arabic.png" alt=""></span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">العربية<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/Arabic.png" alt=""> </a></li>
+              <li><a href="#">English<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/us.png" alt=""> </a></li>
+              <li><a href="#">Русский<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/RU.png" alt=""> </a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
           <li><a class="getstarted scrollto" href="#pricing">احجز برنامجك </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
+    
   </header><!-- End Header -->
-
+   
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
@@ -123,13 +125,297 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/168120-travel-icon-free-hq-image.png" class="img-fluid" alt="">
+          <!-- <img src="assets/img/168120-travel-icon-free-hq-image.png" class="img-fluid" alt=""> -->
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
+  <!-- ======= Search Engine ======= -->
+  <style>
+    
+@media only screen and (max-width: 600px) {
+  #tm-section-search {
+    margin-top: -2.95rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #tm-section-search {
+    margin-top: -7.95rem;
+  }
+}
 
+  </style>
+   <div style="    
+   margin-right: 5px;
+   margin-left: 5px;" class="row tm-banner-row" id="tm-section-search">
+
+    <form dir="rtl" action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+        <div style="text-align: center;">
+            <!-- <img class="img-fluid" src="./assets/img/free-spirit-logo-0142.png" alt=""> -->
+            <p style="margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 30px;
+            line-height: 42px;
+            font-weight: 700;
+            color: #012970; margin-bottom: 20px;">
+              البحث عن أفضل العروض
+            </p>
+        </div>
+      
+       
+        <div class="form-row tm-search-form-row">                                
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                <label style="text-align: right;" for="inputCity">اختر الدولة </label>
+                <select name="" class="form-control tm-select form-select" id="">
+                    <option value="">ألبانيا </option>
+                    <option value="">جورجيا</option>
+                    <option value="">أزربيجان</option>
+                    <!-- <option value="">مصر</option> -->
+                    <!-- <option value="">الاردن</option> -->
+                </select>
+            </div>
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+              <label for="inputAdult">عدد البالغين</label>     
+                    <select name="adult" class="form-control tm-select form-select" id="inputAdult">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>                                       
+            </div>
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+              <label for="inputChildren">عدد الأطفال</label>                                            
+              <select name="children" class="form-control tm-select form-select" id="inputChildren">
+                <option value="0" selected>اضغط للإختيار </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+              </select>                         
+            </div>
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-1">                                    
+                <!-- <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                    <label for="inputRoom">كم عدد الأيام</label>
+                    <select name="room" class="form-control tm-select" id="inputRoom">
+                        <option value="1" selected>1 يوم</option>
+                        <option value="2">2 أيام</option>
+                        <option value="3">3 أيام</option>
+                        <option value="4">4 أيام</option>
+                        <option value="5">5 أيام</option>
+                        <option value="6">6 أيام</option>
+                        <option value="7">7 أيام</option>
+                        <option value="8">8 أيام</option>
+                        <option value="9">9 أيام</option>
+                        <option value="10">10 أيام</option>
+                    </select>                                        
+                </div> -->
+                <!-- <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                    <label for="inputAdult">بالغ</label>     
+                    <select name="adult" class="form-control tm-select" id="inputAdult">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>                                        
+                </div> -->
+                <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                    <label for="inputChildren"> مدة الرحلة </label>                                            
+                    <select name="children" class="form-control tm-select form-select" id="inputChildren">
+                      <option value="0" selected>اضغط للإختيار </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>                                        
+                </div>
+            </div>
+        </div> 
+        <!-- <div class="form-row tm-search-form-row">
+
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                <label for="inputCheckIn">تاريخ السفر</label>
+                <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="تاريخ السفر ">
+            </div>
+            <div style="text-align: right;" class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                <label for="inputCheckOut">تاريخ الغادرة</label>
+                <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="تاريخ المغادرة">
+            </div>
+           
+        </div>      -->
+        <div style="margin: auto; margin-bottom: 10px;" class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+          <!-- <label for="btnSubmit">&nbsp;</label> -->
+          <!-- <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">بحث عن أفضل الرحلات </button> -->
+      </div>           
+      <div style="text-align: center; margin-bottom: 10px;">
+        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase w-75" id="btnSubmit">بحث عن أفضل الرحلات </button>    
+
+      </div>
+    </form>                             
+
+</div> 
+<style>
+  .tm-search-form {
+    background-color: #f2f5fc;
+    border: 1px dashed;
+    width: 100%;
+    max-width: 830px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 16px;  
+    margin: auto;
+
+  }
+  .tm-btn-search {
+    width: 100%;
+    border-radius: 16px ;
+  }
+  .form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .tm-form-group-1 {
+    width: 50%;
+
+  }
+  .tm-form-group-pad {
+    padding: 0 8px;
+  }
+  .tm-form-group {
+    /* float: left; */
+
+  }
+  .form-group {
+    margin-bottom: 1rem;
+
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  select.tm-select.form-control:not([size]):not([multiple]) {
+    height: 45px;
+
+  }
+  .tm-form-group-1 {
+    /* width: 50%; */
+
+  }
+</style>
+   <!-- ======= Search Engine ======= -->
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <!-- <h2>الأسم الموثوق للسياحة و السفر
+      </h2> -->
+      <p>الأسم الموثوق للسياحة و السفر
+      </p>
+    </header>
+
+    <div class="row gy-4" data-aos="fade-left">
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="box">
+          <h3 style="color: #07d5c0;">الباقة الأولى </h3>
+          <!-- <h3 style="color: #07d5c0;"> الأولى </h3> -->
+          <div class="price"><sup>$</sup>100<span> / للشخص</span></div>
+          <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+          <ul>
+            <li> <i class="bi bi-check2"></i>  حجز التذاكر</li>
+            <li> <i class="bi bi-check2"></i> حجز الفندق</li>
+            <li class="na">حجز سيارة </li>
+            <li class="na">الحصول على سيارة خاصة بسائق </li>
+            <li class="na">جولات سياحية داخل البلد</li>
+          </ul>
+          <a href="#" class="btn-buy">شراء الأن</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="box">
+          <span dir="rtl" class="featured">تخفيض 30% </span>
+          <h3 style="color: #65c600;">باقة السوبر </h3>
+          <div class="price"><sup>$</sup>500<span> / للشخص</span></div>
+          <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+          <ul>
+            <li><i class="bi bi-check2"></i>  حجز التذاكر</li>
+            <li><i class="bi bi-check2"></i>  حجز الفندق</li>
+            <li><i class="bi bi-check2"></i>  حجز سيارة </li>
+            <!-- <li> جبال القوقاز</li> -->
+            <li class="na">الحصول على سيارة خاصة بسائق </li>
+            <li class="na">جولات سياحية داخل البلد</li>
+          </ul>
+          <a href="#" class="btn-buy">شراء الأن</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="box">
+          <h3 style="color: #ff901c;"> باقة البرو </h3>
+          <div class="price"><sup>$</sup>29<span> / للشخص</span></div>
+          <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+          <ul>
+            <li><i class="bi bi-check2"></i> حجز التذاكر</li>
+            <li><i class="bi bi-check2"></i> حجز الفندق</li>
+            <li><i class="bi bi-check2"></i> حجز سيارة </li>
+            <li class="na">جولات سياحية داخل البلد</li>
+            <li class="na">خدمات النقل</li>
+          </ul>
+          <a href="#" class="btn-buy">شراء الأن</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="box">
+          <h3 style="color: #ff0071;">باقة غير محدودة </h3>
+          <div class="price"><sup>$</sup>49<span> / للشخص</span></div>
+          <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+          <ul>
+            <li>  <i class="bi bi-check2"></i> حجز التذاكر</li>
+            <li>  <i class="bi bi-check2"></i> حجز الفندق</li>
+            <li>  <i class="bi bi-check2"></i> حجز سيارة </li>
+            <li>  <i class="bi bi-check2"></i>   الحصول على سيارة خاصة بسائق </li>
+            <li>  <i class="bi bi-check2"></i>  جولات سياحية داخل البلد </li>
+          </ul>
+          <a href="#" class="btn-buy">شراء الأن</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- End Pricing Section -->
   <main id="main">
     <!-- ======= About Section ======= -->
     <section dir="rtl" id="about" class="about">
@@ -209,15 +495,27 @@
       </div>
 
     </section><!-- End Values Section -->
-
+    <style>
+      .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+        margin-left: 10px;
+      }
+    </style>
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
+      <p style="text-align: center;margin: 9px 0px 29px 0;
+        padding: 0;
+        font-size: 38px;
+        line-height: 46px;
+        font-weight: 700;
+        color: #012970;">
+          الخدمة المتميزة شعارنا ورضاء العملاء غايتنا
+        </p>
       <div class="container" data-aos="fade-up">
-
+        
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
-            <div class="count-box">
+            <div class="count-box" style="direction: rtl;">
               <i class="bi bi-emoji-smile"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="65523" data-purecounter-duration="1" class="purecounter"></span>
@@ -227,7 +525,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6">
-            <div class="count-box">
+            <div class="count-box" style="direction: rtl;">
               <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
@@ -237,7 +535,7 @@
           </div>
 
           <!-- <div class="col-lg-4 col-md-6">
-            <div class="count-box">
+            <div class="count-box" style="direction: rtl;">
               <i class="bi bi-headset" style="color: #15be56;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
@@ -247,7 +545,7 @@
           </div> -->
 
           <div class="col-lg-4 col-md-6">
-            <div class="count-box">
+            <div class="count-box" style="direction: rtl;">
               <i class="bi bi-people" style="color: #bb0852;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="65570" data-purecounter-duration="1" class="purecounter"></span>
@@ -736,92 +1034,7 @@
     </section> -->
     <!-- End Services Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <!-- <h2>الأسم الموثوق للسياحة و السفر
-          </h2> -->
-          <p>الأسم الموثوق للسياحة و السفر
-          </p>
-        </header>
-
-        <div class="row gy-4" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="box">
-              <h3 style="color: #07d5c0;">الباقة الأولى </h3>
-              <!-- <h3 style="color: #07d5c0;"> الأولى </h3> -->
-              <div class="price"><sup>$</sup>100<span> / للشخص</span></div>
-              <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
-              <ul>
-                <li> <i class="bi bi-check2"></i>  حجز التذاكر</li>
-                <li> <i class="bi bi-check2"></i> حجز الفندق</li>
-                <li class="na">حجز سيارة </li>
-                <li class="na">الحصول على سيارة خاصة بسائق </li>
-                <li class="na">جولات سياحية داخل البلد</li>
-              </ul>
-              <a href="#" class="btn-buy">شراء الأن</a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="box">
-              <span dir="rtl" class="featured">تخفيض 30% </span>
-              <h3 style="color: #65c600;">باقة السوبر </h3>
-              <div class="price"><sup>$</sup>500<span> / للشخص</span></div>
-              <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
-              <ul>
-                <li><i class="bi bi-check2"></i>  حجز التذاكر</li>
-                <li><i class="bi bi-check2"></i>  حجز الفندق</li>
-                <li><i class="bi bi-check2"></i>  حجز سيارة </li>
-                <!-- <li> جبال القوقاز</li> -->
-                <li class="na">الحصول على سيارة خاصة بسائق </li>
-                <li class="na">جولات سياحية داخل البلد</li>
-              </ul>
-              <a href="#" class="btn-buy">شراء الأن</a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="box">
-              <h3 style="color: #ff901c;"> باقة البرو </h3>
-              <div class="price"><sup>$</sup>29<span> / للشخص</span></div>
-              <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
-              <ul>
-                <li><i class="bi bi-check2"></i> حجز التذاكر</li>
-                <li><i class="bi bi-check2"></i> حجز الفندق</li>
-                <li><i class="bi bi-check2"></i> حجز سيارة </li>
-                <li class="na">جولات سياحية داخل البلد</li>
-                <li class="na">خدمات النقل</li>
-              </ul>
-              <a href="#" class="btn-buy">شراء الأن</a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="box">
-              <h3 style="color: #ff0071;">باقة غير محدودة </h3>
-              <div class="price"><sup>$</sup>49<span> / للشخص</span></div>
-              <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
-              <ul>
-                <li>  <i class="bi bi-check2"></i> حجز التذاكر</li>
-                <li>  <i class="bi bi-check2"></i> حجز الفندق</li>
-                <li>  <i class="bi bi-check2"></i> حجز سيارة </li>
-                <li>  <i class="bi bi-check2"></i>   الحصول على سيارة خاصة بسائق </li>
-                <li>  <i class="bi bi-check2"></i>  جولات سياحية داخل البلد </li>
-              </ul>
-              <a href="#" class="btn-buy">شراء الأن</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Pricing Section -->
+   
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -1185,7 +1398,7 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  "لقد كانت تجربتي مع شركة سبيريت تورز   رائعة بكل المقاييس. منذ اللحظة التي اتصلت فيها للاستفسار عن الحجز وحتى نهاية الرحلة، كان فريق العمل ودودًا ومتعاونًا للغاية. تم ترتيب كل التفاصيل بدقة واحترافية، وتلقيت المساعدة في كل مرحلة من مراحل رحلتي. الفنادق التي تم اختيارها كانت ممتازة وموقعها مثالي، وتم تنظيم الجولات السياحية بشكل رائع. لقد كانت تجربة سفر لا تُنسى، وبالتأكيد سأعود مرة أخرى لاستكشاف المزيد من الوجهات مع هذه الشركة المحترفة."
+                  "لقد كانت تجربتي مع شركة سبيريت تورز   رائعة بكل المقاييس. منذ اللحظة التي اتصلت فيها للاستفسار عن الحجز وحتى نهاية الرحلة، كان فريق العمل ودودًا ومتعاونًا للغاية. تم ترتيب كل التفاصيل بدقة واحترافية، وتلقيت المساعدة في كل مرحلة من مراحل رحلتي. الفنادق التي تم اختيارها كانت ممتازة وموقعها مثالي، وتم تنظيم الجولات السياحية بشكل رائع.."
 
 
 
@@ -1205,7 +1418,7 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  "لقد كانت تجربتي مع شركة سبيريت تورز   رائعة بكل المقاييس. منذ اللحظة التي اتصلت فيها للاستفسار عن الحجز وحتى نهاية الرحلة، كان فريق العمل ودودًا ومتعاونًا للغاية. تم ترتيب كل التفاصيل بدقة واحترافية، وتلقيت المساعدة في كل مرحلة من مراحل رحلتي. الفنادق التي تم اختيارها كانت ممتازة وموقعها مثالي، وتم تنظيم الجولات السياحية بشكل رائع. لقد كانت تجربة سفر لا تُنسى، وبالتأكيد سأعود مرة أخرى لاستكشاف المزيد من الوجهات مع هذه الشركة المحترفة."
+                  "لقد كانت تجربتي مع شركة سبيريت تورز   رائعة بكل المقاييس. منذ اللحظة التي اتصلت فيها للاستفسار عن الحجز وحتى نهاية الرحلة، كان فريق العمل ودودًا ومتعاونًا للغاية. تم ترتيب كل التفاصيل بدقة واحترافية، وتلقيت المساعدة في كل مرحلة من مراحل رحلتي. الفنادق التي تم اختيارها كانت ممتازة وموقعها مثالي، وتم تنظيم الجولات السياحية بشكل رائع.."
 
                 </p>
                 <div class="profile mt-auto">
@@ -1240,7 +1453,8 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img style="    width: -webkit-fill-available;
+                " src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1249,10 +1463,15 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>محمد أحمد </h4>
-                <span>CO-Founder</span>
-                <p dir="rtl">رجل أعمال لديه خبرة أكثر من 20 عاماً في السياحة الداخلية داخل جورجيا و خارجها . قام بدراسة الأعمال الحرة في ألمانيا و حاز على العديد من الجوائز نظراً لتحقيقه العديد من النجاحات 
-                  في العديد من المجالات . 
+                <h4> عماد ابراهيم
+                </h4>
+                <span>الرئيس التنفيذي
+
+                </span>
+                <p dir="rtl"> 
+                  الرئيس التنفيذي لمجموعة فري سبيريت تورز في جورجيا و أذربيجان و سلوفينيا و ألبانيا و شركة سبيريت جروب للأستثمار و التطوير العقاري و الأمين العام السابق للجالية المصرية في جورجيا.
+
+
                 </p>
               </div>
             </div>
@@ -1270,9 +1489,14 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>رنا محمد </h4>
-                <span>Product Manager</span>
-                <p dir="rtl"> رجل سياحة من الدرجة الرفيعة لديه خبرة أكثر من 15 عاماً في السياحة و الفنادق في العديد من الدول و لديه خبرة في إدارة الفنادق و الشركات السياحية . </p>
+                <h4> نينو كابانادزه
+                </h4>
+                <span>الشريك الرئيسي
+
+                </span>
+                <p dir="rtl"> الشريك الرئيسي بمجموعة فري سبيريت تورز و شركة سبيريت جروب للأستثمار و التطوير العقاري
+
+                </p>
               </div>
             </div>
           </div>
@@ -1289,9 +1513,15 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4> أيمن السيد</h4>
-                <span>Assistant</span>
-                <p dir="rtl">لديه خبرة في تحليل البيانات و كان لديه العديد من الخبرة في شركات السياحة نظراً لمجال دراسته في ألمانيا . </p>
+                <h4> خالد سعد
+                </h4>
+                <span>المدير التنفيذي
+
+                </span>
+                <p dir="rtl"> 
+                  المدير التنفيذي لمجموعة فري سبيريت تورز
+
+ </p>
               </div>
             </div>
           </div>
@@ -1340,8 +1570,8 @@
             <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div> -->
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div> -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -1500,7 +1730,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer dir="rtl" id="footer" class="footer">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -1559,7 +1789,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div style="text-align: right !important;" class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>تواصل معنا</h4>
             <p>
               4 Giorgi Gegechkori Street, s <br>

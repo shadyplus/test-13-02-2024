@@ -33,7 +33,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
+  <header style="direction: rtl;" id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -43,29 +43,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">الرئيسية</a></li>
-          <li><a class="nav-link scrollto" href="#about">عن الشركة</a></li>
-          <li><a class="nav-link scrollto" href="#services">خدمات</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">المعرض</a></li>
-          <li><a class="nav-link scrollto" href="#team">فريق العمل</a></li>
-          <li><a class="active" href="blog.html">المدونة</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
+          <li><a class="nav-link scrollto active" href="#hero">
+            الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="#about">عن الشركة </a></li>
+          <li><a class="nav-link scrollto" href="#services">الدول</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">المعالم</a></li>
+          <li><a class="nav-link scrollto" href="#team">الفريق </a></li>
+          <li><a href="blog.html">مدونة الشركة</a></li>
+         
 
           <!-- <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -93,12 +78,30 @@
           </li> -->
 
           <li><a class="nav-link scrollto" href="#contact">التواصل</a></li>
-          <li><a class="getstarted scrollto" href="#about">احجز رحلتك</a></li>
+          <li class="dropdown"><a href="#"><span>اللغة <img style="width: 20px;" class="img-fluid" src="./assets/img/languages/Arabic.png" alt=""></span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">العربية<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/Arabic.png" alt=""> </a></li>
+              <li><a href="#">English<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/us.png" alt=""> </a></li>
+              <li><a href="#">Русский<img style="width: 30px;" class="img-fluid" src="./assets/img/languages/RU.png" alt=""> </a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="#pricing">احجز برنامجك </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
+    
   </header><!-- End Header -->
 
   <main id="main">
@@ -475,7 +478,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer dir="rtl" id="footer" class="footer">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -492,7 +495,7 @@
         </div>
       </div>
     </div>
-   
+
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -534,7 +537,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div style="text-align: right !important;" class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>تواصل معنا</h4>
             <p>
               4 Giorgi Gegechkori Street, s <br>
